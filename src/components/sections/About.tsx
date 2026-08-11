@@ -6,101 +6,94 @@ import { COMPANY_INFO } from "@/data/companyData";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-20 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-aurex-navy-subtle text-aurex-navy text-xs font-bold">
-            <Compass className="w-4 h-4 text-aurex-green" />
-            <span>عن الشركة ورؤيتنا</span>
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-100 text-sky-700 text-xs font-bold">
+            <Compass className="w-4 h-4 text-sky-500" />
+            <span>رؤيتنا ورسالتنا</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            أوريكس للمقاولات الكهروميكانيكية والإنشاءات
+            عن شركة أوريكس للمقاولات
           </h2>
-          <p className="text-base text-slate-600 leading-relaxed">
-            تأسست <strong className="text-aurex-navy">أوريكس</strong> لتكون النموذج الأبرز في تقديم الحلول الكهروميكانيكية والهندسية المتقدمة لقطاعات الإنشاءات والتطوير العقاري بالمملكة والجمهورية.
+          <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
+            تأسست أوريكس لتكون النموذج الرائد في تقديم الحلول الكهروميكانيكية والهندسية المتقدمة لقطاعات الإنشاءات والتطوير العقاري.
           </p>
         </div>
 
-        {/* Top Split: Mission Box & Feature Image */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+        {/* Top Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
           
           {/* Mission Card */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 shadow-card space-y-6 relative">
-              <div className="w-14 h-14 rounded-2xl bg-aurex-navy text-white flex items-center justify-center shadow-lg shadow-aurex-navy/20">
-                <Target className="w-7 h-7 text-aurex-green-light" />
+            <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-5">
+              <div className="w-12 h-12 rounded-2xl bg-sky-500 text-white flex items-center justify-center shadow-sm">
+                <Target className="w-6 h-6" />
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">رسالتنا الهندسية</h3>
-                <p className="text-base text-slate-700 leading-relaxed">
+                <h3 className="text-xl font-bold text-slate-900 mb-2">رسالتنا الهندسية</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
                   {COMPANY_INFO.about}
                 </p>
               </div>
 
-              {/* Core Attributes */}
-              <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200">
+              {/* Attributes */}
+              <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200/80">
                 {[
-                  { title: "الجودة العالية", sub: "وفق الأكواد العالمية" },
-                  { title: "الالتزام التام", sub: "بجدول المواعيد" },
-                  { title: "شراكة طويلة", sub: "قائمة على الثقة" },
+                  { title: "جودة عالية", sub: "وفق المعايير" },
+                  { title: "التزام كامل", sub: "بالمواعيد" },
+                  { title: "شراكة موثوقة", sub: "على الثقة" },
                 ].map((item, idx) => (
                   <div key={idx} className="text-right">
-                    <h4 className="text-sm font-bold text-aurex-navy">{item.title}</h4>
-                    <p className="text-xs text-slate-500 mt-0.5">{item.sub}</p>
+                    <h4 className="text-xs font-bold text-slate-900">{item.title}</h4>
+                    <p className="text-[11px] text-slate-500 mt-0.5">{item.sub}</p>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Right Image Display */}
+          {/* Right Image */}
           <div className="lg:col-span-5 relative">
-            <div className="relative h-80 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <div className="relative h-80 rounded-3xl overflow-hidden shadow-lg border border-slate-200">
               <Image
                 src="/images/projects/hyde_park.png"
                 alt="مشروع كمبوند هايد بارك أوريكس"
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-aurex-navy/80 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
               
-              <div className="absolute bottom-6 right-6 left-6 text-white">
-                <div className="flex items-center gap-2 mb-1">
-                  <Shield className="w-4 h-4 text-aurex-green-light" />
-                  <span className="text-xs font-bold">مشروع هايد بارك - القاهرة الجديدة</span>
-                </div>
-                <p className="text-xs text-slate-200">تنفيذ المبنى الإداري والفيلات بكفاءة وجودة فائقة</p>
+              <div className="absolute bottom-5 right-5 left-5 text-white">
+                <span className="text-xs font-bold text-sky-400 block mb-1">مشروع هايد بارك - القاهرة الجديدة</span>
+                <p className="text-xs text-slate-200">تنفيذ الأعمال الكهروميكانيكية والتكييف المركزي</p>
               </div>
             </div>
           </div>
 
         </div>
 
-        {/* Goals Grid (أهدافنا) */}
+        {/* Goals Grid */}
         <div>
           <div className="text-center mb-10">
-            <h3 className="text-2xl font-bold text-slate-900">أهدافنا الإستراتيجية</h3>
-            <p className="text-sm text-slate-500 mt-1">الركائز التي نعتمد عليها لتحقيق التميز في كافة المشاريع</p>
+            <h3 className="text-xl font-bold text-slate-900">أهدافنا الاستراتيجية</h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {COMPANY_INFO.goals.map((goal, index) => (
               <div
                 key={index}
-                className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex items-start gap-4"
+                className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-xs flex items-start gap-3.5 hover:border-sky-200 transition-colors"
               >
-                <div className="w-10 h-10 rounded-xl bg-aurex-green-subtle text-aurex-green font-bold flex items-center justify-center flex-shrink-0">
-                  <CheckCircle2 className="w-5 h-5" />
+                <div className="w-8 h-8 rounded-xl bg-sky-50 text-sky-600 font-bold flex items-center justify-center flex-shrink-0 text-xs">
+                  0{index + 1}
                 </div>
-                <div className="space-y-1">
-                  <span className="text-xs font-bold text-aurex-navy">الهدف 0{index + 1}</span>
-                  <p className="text-sm font-semibold text-slate-800 leading-relaxed">
-                    {goal}
-                  </p>
-                </div>
+                <p className="text-xs sm:text-sm font-semibold text-slate-700 leading-relaxed pt-1">
+                  {goal}
+                </p>
               </div>
             ))}
           </div>

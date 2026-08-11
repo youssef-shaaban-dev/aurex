@@ -7,13 +7,18 @@
   --color-aurex-navy-subtle: #EEF4FC;
   
   --color-aurex-green: #3A9D23;
-  --color-aurex-green-dark: #297718;
+  --color-aurex-green-dark: #2A7B16;
   --color-aurex-green-light: #4EC233;
   --color-aurex-green-subtle: #F0F9EE;
 
-  --color-aurex-slate: #0F172A;
-  --color-aurex-muted: #64748B;
-  --color-aurex-surface: #F8FAFC;
+  --color-slate-950: #020617;
+  --color-slate-900: #0F172A;
+  --color-slate-800: #1E293B;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-500: #64748B;
+  --color-slate-100: #F1F5F9;
+  --color-slate-50: #F8FAFC;
 
   --font-cairo: var(--font-cairo), system-ui, -apple-system, sans-serif;
 }
@@ -33,37 +38,32 @@
   }
 }
 
-/* Custom Utilities */
-.glass-nav {
-  background: rgba(255, 255, 255, 0.85);
+/* Authentic Aurex Brand Styling */
+.hero-light-pattern {
+  background-color: #F4F8FD;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(11, 67, 149, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(58, 157, 35, 0.05) 0%, transparent 40%);
+}
+
+.floating-nav {
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(11, 67, 149, 0.08);
+  border: 1px solid rgba(11, 67, 149, 0.12);
+  box-shadow: 0 10px 30px -10px rgba(11, 67, 149, 0.08);
 }
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(11, 67, 149, 0.08);
+.brand-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 20px -2px rgba(11, 67, 149, 0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.badge-glow {
-  box-shadow: 0 0 20px rgba(58, 157, 35, 0.25);
-}
-
-.navy-gradient {
-  background: linear-gradient(135deg, #0B4395 0%, #072A5E 100%);
-}
-
-.green-gradient {
-  background: linear-gradient(135deg, #3A9D23 0%, #297718 100%);
-}
-
-.hero-pattern {
-  background-color: #072A5E;
-  background-image: 
-    radial-gradient(at 0% 0%, rgba(11, 67, 149, 0.8) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(58, 157, 35, 0.35) 0px, transparent 50%);
+.brand-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(11, 67, 149, 0.1);
+  border-color: rgba(11, 67, 149, 0.25);
 }
 
 /* Custom Scrollbar */
