@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { 
   Wind, 
   Award, 
@@ -9,16 +8,16 @@ import {
   Wrench, 
   Flame, 
   CheckCircle2, 
-  ArrowLeft 
+  MessageSquare 
 } from "lucide-react";
-import { SERVICES, ServiceItem } from "@/data/companyData";
+import { SERVICES, ServiceItem, COMPANY_INFO } from "@/data/companyData";
 
 const ICON_MAP: Record<string, React.ReactNode> = {
-  Wind: <Wind className="w-5 h-5 text-sky-600" />,
-  Award: <Award className="w-5 h-5 text-sky-600" />,
-  Layers: <Layers className="w-5 h-5 text-sky-600" />,
-  Wrench: <Wrench className="w-5 h-5 text-sky-600" />,
-  Flame: <Flame className="w-5 h-5 text-sky-600" />,
+  Wind: <Wind className="w-5 h-5 text-aurex-navy" />,
+  Award: <Award className="w-5 h-5 text-aurex-navy" />,
+  Layers: <Layers className="w-5 h-5 text-aurex-navy" />,
+  Wrench: <Wrench className="w-5 h-5 text-aurex-navy" />,
+  Flame: <Flame className="w-5 h-5 text-aurex-navy" />,
 };
 
 export default function Services() {
@@ -28,8 +27,8 @@ export default function Services() {
         
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-100 text-sky-800 text-xs font-extrabold">
-            <Wrench className="w-4 h-4 text-sky-600" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-aurex-navy-subtle text-aurex-navy text-xs font-extrabold">
+            <Wrench className="w-4 h-4 text-aurex-green" />
             <span>حلولنا الهندسية الكهروميكانيكية</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -45,7 +44,7 @@ export default function Services() {
           {SERVICES.map((service: ServiceItem) => (
             <div
               key={service.id}
-              className="rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-xs hover:shadow-md hover:border-sky-200 transition-all duration-300 flex flex-col justify-between group"
+              className="rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-xs hover:shadow-md hover:border-aurex-navy/30 transition-all duration-300 flex flex-col justify-between group"
             >
               {/* Image Header */}
               <div className="relative h-48 w-full overflow-hidden bg-slate-100">
@@ -58,13 +57,13 @@ export default function Services() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
                 
                 {/* Floating Icon */}
-                <div className="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/95 text-sky-600 flex items-center justify-center shadow-md">
+                <div className="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/95 text-aurex-navy flex items-center justify-center shadow-md">
                   {ICON_MAP[service.iconName] || <Wrench className="w-5 h-5" />}
                 </div>
 
                 {/* Subtitle Pill */}
                 <div className="absolute bottom-3 right-4 left-4">
-                  <span className="text-[11px] font-extrabold text-white bg-sky-600/90 px-3 py-1 rounded-full dir-ltr inline-block shadow-xs">
+                  <span className="text-[11px] font-extrabold text-white bg-aurex-navy/90 px-3 py-1 rounded-full dir-ltr inline-block shadow-xs">
                     {service.subtitle}
                   </span>
                 </div>
@@ -73,7 +72,7 @@ export default function Services() {
               {/* Service Body */}
               <div className="p-6 space-y-4 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-lg font-extrabold text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
+                  <h3 className="text-lg font-extrabold text-slate-900 mb-2 group-hover:text-aurex-navy transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-xs text-slate-600 font-medium leading-relaxed mb-4">
@@ -84,7 +83,7 @@ export default function Services() {
                   <div className="space-y-2 pt-3 border-t border-slate-100">
                     {service.features.map((feat, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                        <CheckCircle2 className="w-4 h-4 text-aurex-green flex-shrink-0" />
                         <span>{feat}</span>
                       </div>
                     ))}
@@ -93,13 +92,15 @@ export default function Services() {
 
                 {/* Action Link */}
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <Link
-                    href="#contact"
-                    className="text-xs font-extrabold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1.5 transition-colors"
+                  <a
+                    href={`https://wa.me/2${COMPANY_INFO.phone1}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-black text-aurex-green hover:text-aurex-green-dark inline-flex items-center gap-1.5 transition-colors"
                   >
-                    <span>طلب معاينة للمشروع</span>
-                    <ArrowLeft className="w-3.5 h-3.5" />
-                  </Link>
+                    <MessageSquare className="w-3.5 h-3.5" />
+                    <span>تواصل عبر الواتساب</span>
+                  </a>
                 </div>
               </div>
 

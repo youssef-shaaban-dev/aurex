@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Menu, X, ChevronLeft, MessageSquare } from "lucide-react";
+import { MessageSquare, Menu, X, ChevronLeft } from "lucide-react";
 import { COMPANY_INFO } from "@/data/companyData";
 
 const NAV_LINKS = [
@@ -57,24 +57,16 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Action Buttons */}
+          {/* Action Button: WhatsApp Only */}
           <div className="hidden sm:flex items-center gap-3">
-            <a
-              href={`tel:${COMPANY_INFO.phone1}`}
-              className="flex items-center gap-2 px-5 py-2 rounded-full bg-aurex-green hover:bg-aurex-green-dark text-white text-xs sm:text-sm font-black shadow-sm transition-all hover:shadow-md"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span className="dir-ltr">{COMPANY_INFO.phone1}</span>
-            </a>
-
             <a
               href={`https://wa.me/2${COMPANY_INFO.phone1}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full bg-aurex-navy hover:bg-aurex-navy-dark text-white text-xs font-black transition-all"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-aurex-green hover:bg-aurex-green-dark text-white text-xs sm:text-sm font-black shadow-sm transition-all hover:shadow-md"
             >
-              <MessageSquare className="w-3.5 h-3.5" />
-              <span>واتساب</span>
+              <MessageSquare className="w-4 h-4" />
+              <span>تواصل عبر الواتساب</span>
             </a>
           </div>
 
@@ -106,12 +98,14 @@ export default function Navbar() {
             ))}
             <div className="pt-3 flex flex-col gap-2">
               <a
-                href={`tel:${COMPANY_INFO.phone1}`}
+                href={`https://wa.me/2${COMPANY_INFO.phone1}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-full bg-aurex-green text-white text-sm font-black shadow-sm"
               >
-                <Phone className="w-4 h-4" />
-                <span>اتصل بنا: {COMPANY_INFO.phone1}</span>
+                <MessageSquare className="w-4 h-4" />
+                <span>تواصل عبر الواتساب</span>
               </a>
             </div>
           </div>

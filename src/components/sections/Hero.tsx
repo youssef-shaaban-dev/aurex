@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Award, CheckCircle2, ShieldCheck, Phone } from "lucide-react";
+import { Award, CheckCircle2, ShieldCheck, MessageSquare } from "lucide-react";
 import { COMPANY_INFO } from "@/data/companyData";
 
 export default function Hero() {
@@ -40,7 +40,7 @@ export default function Hero() {
             {/* PDF Verified Bullets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
               {[
-                "موزع معتمد رسمياً: (Carrier - Midea - Haier - Toshiba)",
+                "موزع معتمد رسمياً: (Carrier - Midea - Haier)",
                 "سلسلة مشاريع كبرى منفذة في جميع محافظات مصر",
                 "تصنيع وتوريد مجاري الهواء والدكت والعزل الحراري",
                 "تأسيس شبكات مواسير الفريون وأعمال مكافحة الحريق"
@@ -52,14 +52,16 @@ export default function Hero() {
               ))}
             </div>
 
-            {/* Action Buttons */}
+            {/* Action Buttons: Clean WhatsApp Button */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
-                href={`tel:${COMPANY_INFO.phone1}`}
+                href={`https://wa.me/2${COMPANY_INFO.phone1}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-3.5 rounded-full bg-aurex-green hover:bg-aurex-green-dark text-white font-black text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2"
               >
-                <Phone className="w-4 h-4" />
-                <span>اتصل بنا: {COMPANY_INFO.phone1}</span>
+                <MessageSquare className="w-4 h-4" />
+                <span>مراسلة عبر الواتساب</span>
               </a>
 
               <Link
@@ -74,7 +76,7 @@ export default function Hero() {
             <div className="pt-6 border-t border-slate-200 space-y-2">
               <p className="text-xs text-slate-600 font-extrabold">توكيلات وموزّع معتمد رسمياً:</p>
               <div className="flex flex-wrap gap-3">
-                {["ميراكو كاريير (Miraco Carrier)", "ميديا (Midea)", "هاير (Haier)", "توشيبا (Toshiba)"].map((brand, i) => (
+                {["ميراكو كاريير (Miraco Carrier)", "ميديا (Midea)", "هاير (Haier)"].map((brand, i) => (
                   <span
                     key={i}
                     className="px-3.5 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-black text-slate-800 shadow-xs"

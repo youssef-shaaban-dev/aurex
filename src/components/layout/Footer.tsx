@@ -1,7 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, MapPin, ShieldCheck, ArrowUp } from "lucide-react";
+import { MessageSquare, Mail, MapPin, ArrowUp } from "lucide-react";
 import { COMPANY_INFO } from "@/data/companyData";
+
+const NAV_LINKS = [
+  { href: "#hero", label: "الرئيسية" },
+  { href: "#about", label: "من نحن" },
+  { href: "#services", label: "خدماتنا" },
+  { href: "#portfolio", label: "مشاريعنا" },
+  { href: "#certificates", label: "الشهادات والاعتمادات" },
+  { href: "#contact", label: "اتصل بنا" },
+];
 
 export default function Footer() {
   return (
@@ -33,41 +42,23 @@ export default function Footer() {
             </Link>
 
             <p className="text-xs sm:text-sm text-slate-200 leading-relaxed font-bold max-w-md">
-              أوريكس هي الشركة الرائدة في مصر في تقديم دراسات وتوريد وتنفيذ أنظمة التكييف المركزي والمقاولات الكهروميكانيكية، وموزع معتمد لكبرى التوكيلات العالمية.
+              أوريكس هي الشركة الرائدة في مصر في تقديم دراسات وتوريد وتنفيذ أنظمة التكييف المركزي والمقاولات الكهروميكانيكية.
             </p>
-
-            <div className="flex flex-wrap items-center gap-3 pt-2">
-              <span className="text-xs text-slate-300 font-extrabold">موزع معتمد رسمياً:</span>
-              <span className="text-xs font-black text-aurex-green-light bg-aurex-navy/60 border border-aurex-navy px-3 py-1 rounded-md">
-                Carrier - Midea - Haier - Toshiba
-              </span>
-            </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links (Exact Navbar Order) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-sm font-black text-white border-r-4 border-aurex-green pr-3">
               روابط سريعة
             </h4>
             <ul className="space-y-2.5 text-xs font-bold text-slate-200">
-              <li>
-                <Link href="#hero" className="hover:text-aurex-green-light transition-colors">الرئيسية</Link>
-              </li>
-              <li>
-                <Link href="#about" className="hover:text-aurex-green-light transition-colors">عن الشركة ورؤيتنا</Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-aurex-green-light transition-colors">خدمات التكييف والشبكات</Link>
-              </li>
-              <li>
-                <Link href="#portfolio" className="hover:text-aurex-green-light transition-colors">سابقة الأعمال والمشاريع</Link>
-              </li>
-              <li>
-                <Link href="#certificates" className="hover:text-aurex-green-light transition-colors">شهادات وتوكيلات الموزع المعتمد</Link>
-              </li>
-              <li>
-                <Link href="#contact" className="hover:text-aurex-green-light transition-colors">اتصل بنا وطلب معاينة</Link>
-              </li>
+              {NAV_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="hover:text-aurex-green-light transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -84,34 +75,47 @@ export default function Footer() {
               </div>
 
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-aurex-green-light flex-shrink-0" />
-                <span className="dir-ltr text-right">{COMPANY_INFO.phone1} - {COMPANY_INFO.phone2}</span>
+                <MessageSquare className="w-4 h-4 text-aurex-green-light flex-shrink-0" />
+                <a
+                  href={`https://wa.me/2${COMPANY_INFO.phone1}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-aurex-green-light transition-colors"
+                >
+                  مراسلة عبر الواتساب
+                </a>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-aurex-green-light flex-shrink-0" />
                 <span className="font-mono dir-ltr">{COMPANY_INFO.email}</span>
               </div>
-
-              <div className="flex items-center gap-2.5 text-slate-300 pt-1">
-                <ShieldCheck className="w-4 h-4 text-aurex-green-light" />
-                <span>جميع الأعمال معتمدة ومكفولة بالضمان الهندسي</span>
-              </div>
             </div>
           </div>
 
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-bold text-slate-300">
-          <p>© {new Date().getFullYear()} {COMPANY_INFO.fullName}. جميع الحقوق محفوظة.</p>
-          <a
-            href="#hero"
-            className="p-2.5 rounded-full bg-aurex-navy hover:bg-aurex-green text-white transition-colors"
-            aria-label="الرجوع للأعلى"
-          >
-            <ArrowUp className="w-4 h-4" />
-          </a>
+        {/* Copyright Section (Matched to reference image) */}
+        <div className="pt-8 space-y-3 text-center text-xs font-bold text-slate-300">
+          <p>
+            © {new Date().getFullYear()} أوريكس - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري.
+          </p>
+          <div className="flex items-center justify-center gap-2 text-slate-300 pt-1">
+            <span>صُنع بكل فخر في مصر بحب ❤️</span>
+            <span className="underline decoration-aurex-green text-white">
+              تم تصميم وتطوير الموقع من خلال شركة ميركو ايجيبت
+            </span>
+          </div>
+
+          <div className="pt-4 flex justify-center">
+            <a
+              href="#hero"
+              className="p-2.5 rounded-full bg-aurex-navy hover:bg-aurex-green text-white transition-colors"
+              aria-label="الرجوع للأعلى"
+            >
+              <ArrowUp className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
       </div>

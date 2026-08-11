@@ -34,14 +34,14 @@ export const COMPANY_INFO = {
   fullName: "أوريكس للأعمال الكهروميكانيكية والإنشاءات",
   tagline: "حلول التكييف المركزي والمقاولات الكهروميكانيكية المتكاملة",
   phone1: "01003866825",
-  phone2: "01029173111",
+  whatsapp: "+201003866825",
   email: "futureforairconditing@gmail.com",
   address: "مدينة نصر - الحي الثامن - مول ميديكال سنتر - الدور الثالث - مكتب 355 - القاهرة",
   workingHours: "السبت - الخميس: 9:00 صباحاً - 6:00 مساءً",
   about: `نسعى في أوريكس للتكييف والتوريد والمقاولات إلى تقديم حلول متكاملة وعصرية في أنظمة التكييف والتوريد والأعمال المقاولاتية الكهروميكانيكية، بجودة عالية ومعايير احترافية تضمنراحة عملائنا وكفاءة مشاريعهم، مع الالتزام بالدقة والسرعة وبناء شراكات طويلة الأمد قائمة على الثقة والتميز.`,
   stats: [
     { value: "+25", label: "مشروعاً رئيسياً منفذاً" },
-    { value: "4", label: "توكيلات وموزع معتمد عالمي" },
+    { value: "3", label: "توكيلات وموزع معتمد عالمي" },
     { value: "100%", label: "ضمان ومعايير السلامة والكفاءة" },
     { value: "+10", label: "سنوات من التميز في السوق المصري" },
   ],
@@ -73,22 +73,21 @@ export const SERVICES: ServiceItem[] = [
   {
     id: "authorized-distributor",
     title: "موزع معتمد لأكبر الماركات العالمية",
-    subtitle: "Carrier - Midea - Haier - Toshiba",
+    subtitle: "Carrier - Midea - Haier",
     description: "موزع معتمد رسمياً لتوريد وتثبيت كافة أجهزة ومعدات التكييف من كبرى الشركات العالمية مع تقديم الضمان المعتمد والدعم الفني المباشر.",
     iconName: "Award",
     image: "/images/certificates/miraco_distributor.png",
     features: [
       "أجهزة تكييف كاريير (Miraco Carrier)",
       "أنظمة ميديا المتطورة (Midea HVAC)",
-      "حلول هاير الذكية (Haier Appliances)",
-      "أجهزة توشيبا (Toshiba Air Conditioners)"
+      "حلول هاير الذكية (Haier Appliances)"
     ]
   },
   {
     id: "ducting-isolation",
     title: "تصنيع وتوريد مجاري الهواء والعزل",
     subtitle: "Ductwork - Thermal Insulation - Grilles & Diffusers",
-    description: "تصنيع وتوريد وتثبيت دكت الصاج الصاج المجلفن والمسبق العزل، مع تركيب العزل الحراري ومخارج وجريلات توزيع الهواء وفق الكود العالمي.",
+    description: "تصنيع وتوريد وتثبيت دكت الصاج المجلفن والمسبق العزل، مع تركيب العزل الحراري ومخارج وجريلات توزيع الهواء وفق الكود العالمي.",
     iconName: "Layers",
     image: "/images/site/ductwork_black.png",
     features: [
@@ -256,9 +255,9 @@ export const CERTIFICATES: CertificateItem[] = [
     id: "miraco-carrier",
     title: "شهادة موزع معتمد - شركة ميراكو",
     issuer: "شركة مصر لصناعة التبريد والتكييف 'ميراكو' (Miraco)",
-    brands: ["Carrier", "Midea", "Toshiba"],
+    brands: ["Carrier", "Midea"],
     validity: "معتمدة حتى 2025/12/31",
-    description: "شهادة اعتماد رسمية لشركة أوريكس كموزع معتمد لأجهزة تكييف ميراكو (كارير - ميديا - توشيبا) المنزلية والتجارية، مع أحقية التركيب والتوريد والصيانة والضمان.",
+    description: "شهادة اعتماد رسمية لشركة أوريكس كموزع معتمد لأجهزة تكييف ميراكو (كاريير - ميديا) المنزلية والتجارية، مع أحقية التركيب والتوريد والصيانة والضمان.",
     image: "/images/certificates/miraco_distributor.png"
   },
   {

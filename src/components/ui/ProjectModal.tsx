@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { X, MapPin, CheckCircle2, Building2, PhoneCall } from "lucide-react";
-import { ProjectItem } from "@/data/companyData";
+import { X, MapPin, CheckCircle2, Building2, MessageSquare } from "lucide-react";
+import { ProjectItem, COMPANY_INFO } from "@/data/companyData";
 
 interface ProjectModalProps {
   project: ProjectItem | null;
@@ -84,12 +84,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="p-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
           <span className="text-xs text-slate-500 font-medium">أوريكس - جودة موثوقة ونطاق عمل محترف</span>
           <a
-            href="#contact"
-            onClick={onClose}
-            className="px-5 py-2.5 rounded-xl bg-aurex-navy hover:bg-aurex-navy-dark text-white text-xs font-bold flex items-center gap-2 transition-colors"
+            href={`https://wa.me/2${COMPANY_INFO.phone1}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2.5 rounded-xl bg-aurex-green hover:bg-aurex-green-dark text-white text-xs font-black flex items-center gap-2 transition-colors"
           >
-            <PhoneCall className="w-3.5 h-3.5" />
-            <span>طلب مشروع مماثل</span>
+            <MessageSquare className="w-4 h-4" />
+            <span>مراسلة عبر الواتساب</span>
           </a>
         </div>
 
