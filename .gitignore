@@ -1,16 +1,18 @@
 node_modules
-.next
-out
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# next js
-.next
-out
-.vercel
 
 # vercel
 .vercel
+
+# Next.js
+.next/
+out/
+
+# typescript
+*.tsbuildinfo
+
