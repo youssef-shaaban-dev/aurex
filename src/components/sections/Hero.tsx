@@ -10,7 +10,7 @@ export default function Hero() {
     <section id="hero" className="relative pt-32 pb-24 hero-light-pattern overflow-hidden">
       
       {/* Background Soft Glow */}
-      <div className="absolute top-0 inset-x-0 h-64 bg-gradient-to-b from-[#0B4395]/10 via-[#3A9D23]/5 to-transparent pointer-events-none"></div>
+      <div className="absolute top-0 inset-x-0 h-64 bg-gradient-to-b from-aurex-navy/10 via-aurex-green/5 to-transparent pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -19,15 +19,15 @@ export default function Hero() {
           <div className="lg:col-span-7 space-y-7 text-right">
             
             {/* Company Badge */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#EEF4FC] border border-[#0B4395]/20 text-[#0B4395] text-xs sm:text-sm font-black shadow-xs">
-              <ShieldCheck className="w-4 h-4 text-[#3A9D23]" />
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-aurex-navy-subtle border border-aurex-navy/20 text-aurex-navy text-xs sm:text-sm font-black shadow-xs">
+              <ShieldCheck className="w-4 h-4 text-aurex-green" />
               <span>أوريكس للأعمال الكهروميكانيكية والإنشاءات</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.2]">
               أنظمة التكييف المركزي <br />
-              <span className="text-[#0B4395] font-black">
+              <span className="text-aurex-navy font-black">
                 والمقاولات الكهروميكانيكية
               </span>
             </h1>
@@ -46,7 +46,7 @@ export default function Hero() {
                 "تأسيس شبكات مواسير الفريون وأعمال مكافحة الحريق"
               ].map((bullet, i) => (
                 <div key={i} className="flex items-center gap-2.5 text-xs sm:text-sm font-black text-slate-800 bg-white p-2.5 rounded-xl border border-slate-200 shadow-2xs">
-                  <CheckCircle2 className="w-4 h-4 text-[#3A9D23] flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-aurex-green flex-shrink-0" />
                   <span>{bullet}</span>
                 </div>
               ))}
@@ -56,7 +56,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
                 href={`tel:${COMPANY_INFO.phone1}`}
-                className="px-8 py-3.5 rounded-full bg-[#3A9D23] hover:bg-[#2A7B16] text-white font-black text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2"
+                className="px-8 py-3.5 rounded-full bg-aurex-green hover:bg-aurex-green-dark text-white font-black text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2"
               >
                 <Phone className="w-4 h-4" />
                 <span>اتصل بنا: {COMPANY_INFO.phone1}</span>
@@ -64,7 +64,7 @@ export default function Hero() {
 
               <Link
                 href="#services"
-                className="px-8 py-3.5 rounded-full bg-[#0B4395] hover:bg-[#072A5E] text-white font-black text-sm shadow-xs transition-colors"
+                className="px-8 py-3.5 rounded-full bg-aurex-navy hover:bg-aurex-navy-dark text-white font-black text-sm shadow-xs transition-colors"
               >
                 <span>استكشف خدمات أوريكس</span>
               </Link>
@@ -87,13 +87,12 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Hero Image Card (PDF extracted image) */}
+          {/* Right Hero Image Card */}
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
               <div className="relative rounded-3xl overflow-hidden bg-white border border-slate-200 p-3 shadow-xl">
                 
-                {/* Image extracted from PDF page 11 */}
                 <div className="relative h-80 sm:h-96 w-full rounded-2xl overflow-hidden bg-slate-100">
                   <Image
                     src="/images/site/chillers.png"
@@ -105,9 +104,9 @@ export default function Hero() {
                 </div>
 
                 {/* Card Callout */}
-                <div className="mt-3 p-4 rounded-2xl bg-[#EEF4FC] border border-[#0B4395]/15 flex items-center justify-between">
+                <div className="mt-3 p-4 rounded-2xl bg-aurex-navy-subtle border border-aurex-navy/15 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#0B4395] text-white flex items-center justify-center font-bold flex-shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-aurex-navy text-white flex items-center justify-center font-bold flex-shrink-0">
                       <Award className="w-5 h-5" />
                     </div>
                     <div>

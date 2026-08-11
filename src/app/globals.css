@@ -5,20 +5,11 @@
   --color-aurex-navy-dark: #072A5E;
   --color-aurex-navy-light: #1B5DBF;
   --color-aurex-navy-subtle: #EEF4FC;
-  
+
   --color-aurex-green: #3A9D23;
   --color-aurex-green-dark: #2A7B16;
   --color-aurex-green-light: #4EC233;
   --color-aurex-green-subtle: #F0F9EE;
-
-  --color-slate-950: #020617;
-  --color-slate-900: #0F172A;
-  --color-slate-800: #1E293B;
-  --color-slate-700: #334155;
-  --color-slate-600: #475569;
-  --color-slate-500: #64748B;
-  --color-slate-100: #F1F5F9;
-  --color-slate-50: #F8FAFC;
 
   --font-cairo: var(--font-cairo), system-ui, -apple-system, sans-serif;
 }
@@ -38,7 +29,7 @@
   }
 }
 
-/* Authentic Aurex Brand Styling */
+/* Custom Background Patterns & Utilities */
 .hero-light-pattern {
   background-color: #F4F8FD;
   background-image: 

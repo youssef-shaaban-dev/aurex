@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Menu, X, ChevronLeft, MessageSquare } from "lucide-react";
@@ -35,8 +35,8 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-black text-[#0B4395] tracking-tight">
-                AUREX <span className="text-[#3A9D23] font-bold">أوريكس</span>
+              <span className="text-lg font-black text-aurex-navy tracking-tight">
+                AUREX <span className="text-aurex-green font-bold">أوريكس</span>
               </span>
               <span className="text-[10px] text-slate-500 font-bold -mt-1">
                 للمقاولات الكهروميكانيكية
@@ -50,18 +50,18 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-xs sm:text-sm font-extrabold text-slate-800 hover:text-[#0B4395] transition-colors py-1 relative"
+                className="text-xs sm:text-sm font-extrabold text-slate-800 hover:text-aurex-navy transition-colors py-1 relative"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* Action Buttons with Authentic Aurex Colors */}
+          {/* Action Buttons */}
           <div className="hidden sm:flex items-center gap-3">
             <a
               href={`tel:${COMPANY_INFO.phone1}`}
-              className="flex items-center gap-2 px-5 py-2 rounded-full bg-[#3A9D23] hover:bg-[#2A7B16] text-white text-xs sm:text-sm font-black shadow-sm transition-all hover:shadow-md"
+              className="flex items-center gap-2 px-5 py-2 rounded-full bg-aurex-green hover:bg-aurex-green-dark text-white text-xs sm:text-sm font-black shadow-sm transition-all hover:shadow-md"
             >
               <Phone className="w-3.5 h-3.5" />
               <span className="dir-ltr">{COMPANY_INFO.phone1}</span>
@@ -71,7 +71,7 @@ export default function Navbar() {
               href={`https://wa.me/2${COMPANY_INFO.phone1}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full bg-[#0B4395] hover:bg-[#072A5E] text-white text-xs font-black transition-all"
+              className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full bg-aurex-navy hover:bg-aurex-navy-dark text-white text-xs font-black transition-all"
             >
               <MessageSquare className="w-3.5 h-3.5" />
               <span>واتساب</span>
@@ -98,7 +98,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-between text-sm font-extrabold text-slate-900 hover:text-[#0B4395] py-2.5 border-b border-slate-100"
+                className="flex items-center justify-between text-sm font-extrabold text-slate-900 hover:text-aurex-navy py-2.5 border-b border-slate-100"
               >
                 <span>{link.label}</span>
                 <ChevronLeft className="w-4 h-4 text-slate-400" />
@@ -108,7 +108,7 @@ export default function Navbar() {
               <a
                 href={`tel:${COMPANY_INFO.phone1}`}
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 w-full py-3 rounded-full bg-[#3A9D23] text-white text-sm font-black shadow-sm"
+                className="flex items-center justify-center gap-2 w-full py-3 rounded-full bg-aurex-green text-white text-sm font-black shadow-sm"
               >
                 <Phone className="w-4 h-4" />
                 <span>اتصل بنا: {COMPANY_INFO.phone1}</span>

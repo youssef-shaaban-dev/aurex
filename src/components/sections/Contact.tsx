@@ -10,8 +10,8 @@ export default function Contact() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EEF4FC] border border-[#0B4395]/20 text-[#0B4395] text-xs font-black">
-            <Phone className="w-4 h-4 text-[#3A9D23]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-aurex-navy-subtle border border-aurex-navy/20 text-aurex-navy text-xs font-black">
+            <Phone className="w-4 h-4 text-aurex-green" />
             <span>تواصل مباشر ومباشر مع مهندسينا</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -28,11 +28,11 @@ export default function Contact() {
           {/* Card 1: Primary Phone */}
           <div className="p-7 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-all space-y-5 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#EEF4FC] text-[#0B4395] flex items-center justify-center font-bold">
+              <div className="w-12 h-12 rounded-2xl bg-aurex-navy-subtle text-aurex-navy flex items-center justify-center font-bold">
                 <Phone className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-black text-[#0B4395] uppercase tracking-wider block mb-1">
+                <span className="text-xs font-black text-aurex-navy uppercase tracking-wider block mb-1">
                   خط المبيعات والاستشارات
                 </span>
                 <h3 className="text-xl font-black text-slate-900">
@@ -46,7 +46,7 @@ export default function Contact() {
 
             <a
               href={`tel:${COMPANY_INFO.phone1}`}
-              className="w-full py-3.5 px-4 rounded-2xl bg-[#3A9D23] hover:bg-[#2A7B16] text-white font-black text-sm shadow-xs flex items-center justify-center gap-2 transition-all hover:shadow-md"
+              className="w-full py-3.5 px-4 rounded-2xl bg-aurex-green hover:bg-aurex-green-dark text-white font-black text-sm shadow-xs flex items-center justify-center gap-2 transition-all hover:shadow-md"
             >
               <Phone className="w-4 h-4" />
               <span className="dir-ltr text-base">{COMPANY_INFO.phone1}</span>
@@ -56,11 +56,11 @@ export default function Contact() {
           {/* Card 2: Secondary Phone & WhatsApp */}
           <div className="p-7 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-all space-y-5 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#F0F9EE] text-[#3A9D23] flex items-center justify-center font-bold">
+              <div className="w-12 h-12 rounded-2xl bg-aurex-green-subtle text-aurex-green flex items-center justify-center font-bold">
                 <MessageSquare className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-black text-[#3A9D23] uppercase tracking-wider block mb-1">
+                <span className="text-xs font-black text-aurex-green uppercase tracking-wider block mb-1">
                   الدعم الفني والواتساب
                 </span>
                 <h3 className="text-xl font-black text-slate-900">
@@ -75,9 +75,9 @@ export default function Contact() {
             <div className="space-y-2">
               <a
                 href={`tel:${COMPANY_INFO.phone2}`}
-                className="w-full py-3 px-4 rounded-2xl bg-[#0B4395] hover:bg-[#072A5E] text-white font-black text-xs flex items-center justify-center gap-2 transition-all"
+                className="w-full py-3 px-4 rounded-2xl bg-aurex-navy hover:bg-aurex-navy-dark text-white font-black text-xs flex items-center justify-center gap-2 transition-all"
               >
-                <Phone className="w-4 h-4 text-[#3A9D23]" />
+                <Phone className="w-4 h-4 text-aurex-green-light" />
                 <span className="dir-ltr text-sm">{COMPANY_INFO.phone2}</span>
               </a>
 
@@ -85,7 +85,7 @@ export default function Contact() {
                 href={`https://wa.me/2${COMPANY_INFO.phone1}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 px-4 rounded-2xl bg-[#3A9D23] hover:bg-[#2A7B16] text-white font-black text-xs flex items-center justify-center gap-2 transition-all"
+                className="w-full py-3 px-4 rounded-2xl bg-aurex-green hover:bg-aurex-green-dark text-white font-black text-xs flex items-center justify-center gap-2 transition-all"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>مراسلة عبر الواتساب</span>
@@ -96,11 +96,11 @@ export default function Contact() {
           {/* Card 3: Address & Office */}
           <div className="p-7 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-all space-y-5 flex flex-col justify-between md:col-span-2 lg:col-span-1">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#EEF4FC] text-[#0B4395] flex items-center justify-center font-bold">
+              <div className="w-12 h-12 rounded-2xl bg-aurex-navy-subtle text-aurex-navy flex items-center justify-center font-bold">
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-black text-[#0B4395] uppercase tracking-wider block mb-1">
+                <span className="text-xs font-black text-aurex-navy uppercase tracking-wider block mb-1">
                   المقر الرئيسي
                 </span>
                 <h3 className="text-xl font-black text-slate-900">
@@ -110,24 +110,24 @@ export default function Contact() {
               
               <div className="space-y-3 pt-2 text-xs text-slate-800 font-bold">
                 <div className="flex items-start gap-2.5">
-                  <MapPin className="w-4 h-4 text-[#0B4395] flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-aurex-navy flex-shrink-0 mt-0.5" />
                   <span className="leading-relaxed text-slate-900">{COMPANY_INFO.address}</span>
                 </div>
 
                 <div className="flex items-center gap-2.5">
-                  <Clock className="w-4 h-4 text-[#3A9D23] flex-shrink-0" />
+                  <Clock className="w-4 h-4 text-aurex-green flex-shrink-0" />
                   <span className="text-slate-800">{COMPANY_INFO.workingHours}</span>
                 </div>
 
                 <div className="flex items-center gap-2.5">
-                  <Mail className="w-4 h-4 text-[#0B4395] flex-shrink-0" />
+                  <Mail className="w-4 h-4 text-aurex-navy flex-shrink-0" />
                   <span className="font-mono text-slate-800 dir-ltr text-right">{COMPANY_INFO.email}</span>
                 </div>
               </div>
             </div>
 
-            <div className="p-3.5 rounded-2xl bg-[#EEF4FC] border border-[#0B4395]/20 text-center">
-              <span className="text-xs font-black text-[#0B4395]">ملاحظة: المعاينات الميدانية متاحة طوال الأسبوع</span>
+            <div className="p-3.5 rounded-2xl bg-aurex-navy-subtle border border-aurex-navy/20 text-center">
+              <span className="text-xs font-black text-aurex-navy">ملاحظة: المعاينات الميدانية متاحة طوال الأسبوع</span>
             </div>
           </div>
 
