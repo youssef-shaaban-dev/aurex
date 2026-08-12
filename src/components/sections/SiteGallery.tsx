@@ -20,13 +20,13 @@ const SITE_PHOTOS = [
     image: "/images/site/ductwork_clean.png",
   },
   {
-    title: "وحدات VRF/VRV الخارجية",
-    subtitle: "تثبيت وتوزيع الأسطح وأنظمة الفريون ذكية الأداء",
+    title: "وحدات تكييف خارجية كونسيلد",
+    subtitle: "تثبيت وتوريد الوحدات الخارجية لفيلا بكمبوند الهضبة بمدينة 6 أكتوبر",
     image: "/images/site/vrf_roof.png",
   },
   {
-    title: "الوحدات المخفية الكونسيلد",
-    subtitle: "تأسيس شبكات الفريون وتعليق الوحدات الداخلية للفيلا والمكاتب",
+    title: "وحدات فان كويل شيلد ووتر (Fan Coil Units)",
+    subtitle: "تنفيذ وحدات الفان كويل بمطعم بيتزا كينج - مول العباسي أمام مدينة الرحاب",
     image: "/images/site/concealed_units.png",
   },
 ];
