@@ -102,9 +102,9 @@ export default function Footer() {
           </p>
           <div className="flex items-center justify-center gap-2 text-slate-300 pt-1">
             <span>صُنع بكل فخر في مصر بحب ❤️</span>
-            <span className="underline decoration-aurex-green text-white">
+            <Link href="https://mrco-egypt.com" target="_blank" rel="noopener noreferrer" className="hover:text-aurex-green-light transition-colors underline decoration-aurex-green text-white">
               تم تصميم وتطوير الموقع من خلال شركة ميركو ايجيبت
-            </span>
+            </Link>
           </div>
 
           <div className="pt-4 flex justify-center">
