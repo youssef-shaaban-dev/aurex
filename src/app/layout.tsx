@@ -11,9 +11,9 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.aurexegypt.com"),
-  title: "أوريكس للأعمال الكهروميكانيكية والإنشاءات | Aurex Electromechanical",
-  description: "شركة أوريكس المتخصصة في أنظمة التكييف المركزي (Chilled Water, VRF, Concealed)، تصنيع وتوريد الدكت، مواسير الفريون، موزع معتمد لكاريير، ميديا، وهاير، وأعمال مكافحة الحريق في مصر.",
+  metadataBase: new URL("https://www.aurexegypt.com/"),
+  title: "شركة تكييف مركزي ومقاولات كهروميكانيكية في مصر | أوريكس",
+  description: "أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية في مصر. حلول Chilled Water وVRV/VRF والدكت ومكافحة الحريق، وموزع معتمد لكاريير وميديا وهاير.",
   keywords: [
     "أوريكس",
     "Aurex",
@@ -27,18 +27,18 @@ export const metadata: Metadata = {
     "VRF",
     "Chilled Water"
   ],
-  authors: [{ name: "Aurex Electromechanical" }],
+  authors: [{ name: "أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية" }],
   openGraph: {
-    title: "أوريكس للأعمال الكهروميكانيكية والإنشاءات",
-    description: "الرائدون في أنظمة التكييف المركزي والمقاولات الكهروميكانيكية في مصر.",
-    url: "https://aurex-eg.com",
+    title: "شركة تكييف مركزي ومقاولات كهروميكانيكية في مصر | أوريكس",
+    description: "أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية في مصر. حلول Chilled Water وVRV/VRF والدكت ومكافحة الحريق، وموزع معتمد لكاريير وميديا وهاير.",
+    url: "https://www.aurexegypt.com",
     siteName: "أوريكس - Aurex",
     images: [
       {
         url: "/images/logo.webp",
         width: 800,
         height: 800,
-        alt: "Aurex Electromechanical Logo",
+        alt: "لوجو أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية",
       },
     ],
     locale: "ar_EG",
