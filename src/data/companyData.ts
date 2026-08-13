@@ -62,7 +62,7 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Chilled Water - VRV/VRF - Concealed - Package Units",
     description: "توريد وتنفيذ وتشغيل أنظمة التكييف المركزي بمختلف قدراتها للمباني الإدارية والتجارية، الفنادق، والمستشفيات مع الضمان الكامل للعمل بأعلى كفاءة طاقة.",
     iconName: "Wind",
-    image: "/images/site/chillers.png",
+    image: "/images/site/chillers.webp",
     features: [
       "أنظمة الماء المثلج (Chilled Water Systems)",
       "أنظمة التدفق المتغير للفريون (VRV / VRF)",
@@ -76,7 +76,7 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Carrier - Midea - Haier",
     description: "موزع معتمد رسمياً لتوريد وتثبيت كافة أجهزة ومعدات التكييف من كبرى الشركات العالمية مع تقديم الضمان المعتمد والدعم الفني المباشر.",
     iconName: "Award",
-    image: "/images/certificates/miraco_distributor.png",
+    image: "/images/certificates/miraco_distributor.webp",
     features: [
       "أجهزة تكييف كاريير (Miraco Carrier)",
       "أنظمة ميديا المتطورة (Midea HVAC)",
@@ -89,7 +89,7 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Ductwork - Thermal Insulation - Grilles & Diffusers",
     description: "تصنيع وتوريد وتثبيت دكت الصاج المجلفن والمسبق العزل، مع تركيب العزل الحراري ومخارج وجريلات توزيع الهواء وفق الكود العالمي.",
     iconName: "Layers",
-    image: "/images/site/ductwork_black.png",
+    image: "/images/site/ductwork_black.webp",
     features: [
       "تصنيع مجاري الهواء الصاج المجلفن (GI Ducts)",
       "تثبيت العزل الحراري والصوتي (Glasswool & Elastomeric)",
@@ -103,7 +103,7 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Copper Piping Networks for Residential & Commercial",
     description: "تأسيس شبكات النحاس وعزل مواسير الفريون للفيلات، الشقق السكنية، والمنشآت التجارية باستخدام أجود أنواع النحاس الجنوب أفريقي والأمريكي.",
     iconName: "Wrench",
-    image: "/images/site/concealed_units.png",
+    image: "/images/site/concealed_units.webp",
     features: [
       "مواسير نحاس جنوب أفريقي وأمريكي نقي",
       "عزل حراري عالي الجودة وحماية الخراطيم",
@@ -117,7 +117,7 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Firefighting - Fire Alarm - Electromechanical Works",
     description: "تنفيذ وإشراف على أنظمة الإطفاء والإنذار المبكر ولوحات التحكم الكهروميكانيكية وتجهيز المضخات وحماية شبكات الأنابيب وفق الاشتراطات.",
     iconName: "Flame",
-    image: "/images/site/vrf_roof.png",
+    image: "/images/site/vrf_roof.webp",
     features: [
       "تركيب مضخات وشبكات مكافحة الحريق (Fire Pumps)",
       "أنظمة الرش الآلي والإنذار المبكر (Fire Alarm & Sprinklers)",
@@ -135,7 +135,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "منشآت تجارية وإدارية",
     location: "القاهرة الجديدة - كمبوند هايد بارك",
     description: "تنفيذ كامل أعمال التكييف المركزي والمخفي وتأسيس الشبكات لعدد من الفيلات ومبنى الأعمال الرئيسي بـ Hyde Park.",
-    image: "/images/projects/hyde_park.png",
+    image: "/images/projects/hyde_park.webp",
     scope: ["أنظمة التكييف المركزي", "شبكات الصاج والعزل", "تأسيس مواسير الفريون"]
   },
   {
@@ -145,7 +145,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "فنادق ومنتجعات",
     location: "شرم الشيخ",
     description: "أعمال الإحلال والتجديد الشاملة لأنظمة التكييف المركزي والتبريد بالغرف والمرافق العامة للفندق.",
-    image: "/images/projects/pyramisa_sharm.png",
+    image: "/images/projects/pyramisa_sharm.webp",
     scope: ["إحلال وتجديد الشيلرات", "تحديث شبكات الهواء", "صيانة الأجهزة المركزية"]
   },
   {
@@ -155,7 +155,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "مباني حكومية وإدارية",
     location: "بني سويف",
     description: "تنفيذ وتوريد أعمال التكييف المركزي وأنظمة مكافحة الحريق للمبنى الرئيسي للمديرية.",
-    image: "/images/projects/beni_suef_security.png",
+    image: "/images/projects/beni_suef_security.webp",
     scope: ["أعمال التكييف المركزية", "شبكات مكافحة الحريق", "الإنذار المبكر"]
   },
   {
@@ -165,7 +165,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "مولات ومراكز تجارية",
     location: "السويس",
     description: "توريد وتركيب مجاري الهواء (Ductwork) والتكييف المركزي لكافة الأدوار والمحلات التجارية داخل المول.",
-    image: "/images/projects/city_plaza_suez.png",
+    image: "/images/projects/city_plaza_suez.webp",
     scope: ["تكييف مركزي للمول", "تركيب الدكت والعزل", "مخارج الهواء والجريلات"]
   },
   {
@@ -175,7 +175,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "مستشفيات وقطاع طبي",
     location: "الإسكندرية",
     description: "تنفيذ شبكات التكييف والتكت وتجديد منظومة التهوية العامة للأقسام العلاقية والإدارية.",
-    image: "/images/projects/maamoura_hospital.png",
+    image: "/images/projects/maamoura_hospital.webp",
     scope: ["أنظمة التهوية والتكييف", "تنقية الهواء والفلترة", "تحديث الشبكات"]
   },
   {
@@ -185,7 +185,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "فنادق ومنتجعات",
     location: "شرم الشيخ",
     description: "تنفيذ أعمال إحلال وتجديد التكييف بالغرف والمطاعم والقاعات الرئيسية للمنتجع.",
-    image: "/images/projects/sultan_gardens.png",
+    image: "/images/projects/sultan_gardens.webp",
     scope: ["تجديد التكييف المخفي", "عزل خطوط الفريون", "الرفع الهيدروليكي"]
   },
   {
@@ -195,7 +195,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "قطاع مصرفي",
     location: "مدينة نصر - القاهرة",
     description: "تنفيذ أعمال التكييف والتهوية وتجهيز فرع البنك الرئيسي بأحدث الأنظمة.",
-    image: "/images/projects/ebe_bank.png",
+    image: "/images/projects/ebe_bank.webp",
     scope: ["أنظمة التكييف المخفي", "الدكت والعزل", "الإنذار المبكر"]
   },
   {
@@ -205,7 +205,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "قطاع مصرفي",
     location: "فروع عدة (كايرو فيستفال، كورنيش المعادي، دارنا، الواسطى)",
     description: "تنفيذ وتوريد أنظمة التكييف والإنذار لعدد من فروع البنك الأهلي المصري.",
-    image: "/images/projects/bavaria_katameya.png",
+    image: "/images/projects/bavaria_katameya.webp",
     scope: ["تأمين وتكييف الفروع", "أنظمة الكونسيلد", "الصيانة الدورية"]
   },
   {
@@ -215,7 +215,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "منشآت تجارية وإدارية",
     location: "القاهرة الجديدة",
     description: "تنفيذ أعمال التكييف والفاير لمجموعة وحدات تجارية ومقر شركة KPI بالمول.",
-    image: "/images/projects/maxim_mall.png",
+    image: "/images/projects/maxim_mall.webp",
     scope: ["تكييف الوحدات الإدارية", "شبكات الفاير فايتنج", "الدكت والتعليق"]
   },
   {
@@ -225,7 +225,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "منشآت تجارية وإدارية",
     location: "التجمع الخامس",
     description: "تأسيس وتجهيز أنظمة التكييف الكونسيلد والدكت والتهوية السقفية المباشرة.",
-    image: "/images/projects/arabella_plaza.png",
+    image: "/images/projects/arabella_plaza.webp",
     scope: ["تكييف مخفي عالي الجودة", "تركيب الجريلات الدائرية والخطية", "العزل الصوتى"]
   },
   {
@@ -235,7 +235,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "مولات ومراكز تجارية",
     location: "السويس",
     description: "تنفيذ أنظمة التكييف المركزية وتوزيع الهواء داخل الهايبر ماركت والمساحات المفتوحة.",
-    image: "/images/projects/carrefour_suez.png",
+    image: "/images/projects/carrefour_suez.webp",
     scope: ["توزيع الهواء للمساحات الكبيرة", "دكت صاج مجلفن", "وحدات الباكدج"]
   },
   {
@@ -245,7 +245,7 @@ export const PROJECTS: ProjectItem[] = [
     categoryLabel: "مستشفيات وقطاع طبي",
     location: "السويس وبني سويف",
     description: "تنفيذ أعمال التكييف لغرف العمليات والعناية المركزة والتعقيم الطبي وفق المعايير الطبية القياسية.",
-    image: "/images/projects/maamoura_hospital.png",
+    image: "/images/projects/maamoura_hospital.webp",
     scope: ["فلترة وتكييف غرف العمليات", "الضغط الموجب والسالب", "العزل الفائق"]
   }
 ];
@@ -258,7 +258,7 @@ export const CERTIFICATES: CertificateItem[] = [
     brands: ["Carrier", "Midea"],
     validity: "معتمدة حتى 2025/12/31",
     description: "شهادة اعتماد رسمية لشركة أوريكس كموزع معتمد لأجهزة تكييف ميراكو (كاريير - ميديا) المنزلية والتجارية، مع أحقية التركيب والتوريد والصيانة والضمان.",
-    image: "/images/certificates/miraco_distributor.png"
+    image: "/images/certificates/miraco_distributor.webp"
   },
   {
     id: "haier-egypt",
@@ -267,6 +267,6 @@ export const CERTIFICATES: CertificateItem[] = [
     brands: ["Haier"],
     validity: "شهادة موزع رسمي معتمد",
     description: "إفادة رسمية باعتماد أوريكس كموزع معتمد لأجهزة ومعدات تكييف هاير بمختلف موديلاتها، والتوريد والتركيب والدعم الفني المعتمد.",
-    image: "/images/certificates/haier_distributor.png"
+    image: "/images/certificates/haier_distributor.webp"
   }
 ];

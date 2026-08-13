@@ -27,7 +27,7 @@ export default function Navbar() {
           <Link href="#hero" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10 rounded-full overflow-hidden bg-white border border-slate-200 p-0.5 shadow-sm">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt={COMPANY_INFO.fullName}
                 fill
                 className="object-contain"

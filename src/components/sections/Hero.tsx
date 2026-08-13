@@ -97,7 +97,7 @@ export default function Hero() {
                 
                 <div className="relative h-80 sm:h-96 w-full rounded-2xl overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/site/chillers.png"
+                    src="/images/site/chillers.webp"
                     alt="أنظمة تكييف أوريكس الكهروميكانيكية"
                     fill
                     className="object-cover"

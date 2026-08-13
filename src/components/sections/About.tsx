@@ -60,7 +60,7 @@ export default function About() {
           <div className="lg:col-span-5 relative">
             <div className="relative h-80 rounded-3xl overflow-hidden shadow-lg border border-slate-200">
               <Image
-                src="/images/projects/hyde_park.png"
+                src="/images/projects/hyde_park.webp"
                 alt="مشروع كمبوند هايد بارك أوريكس"
                 fill
                 className="object-cover"

@@ -7,27 +7,27 @@ const SITE_PHOTOS = [
   {
     title: "محطات الشيلرات المركزية",
     subtitle: "تركيب واختبار محطات التبريد العملاقة للمستشفيات والأبراج",
-    image: "/images/site/chillers.png",
+    image: "/images/site/chillers.webp",
   },
   {
     title: "شبكات الصاج والدكت المكشوف",
     subtitle: "تصنيع وعزل مجاري الهواء للصالات الرياضية والمراكز التجارية",
-    image: "/images/site/ductwork_black.png",
+    image: "/images/site/ductwork_black.webp",
   },
   {
     title: "مخرجات وموزعات الهواء السقفية",
     subtitle: "تركيب الجريلات والمنافيخ وتوازن الهواء وفق الكود الهندسي",
-    image: "/images/site/ductwork_clean.png",
+    image: "/images/site/ductwork_clean.webp",
   },
   {
     title: "وحدات تكييف خارجية كونسيلد",
     subtitle: "تثبيت وتوريد الوحدات الخارجية لفيلا بكمبوند الهضبة بمدينة 6 أكتوبر",
-    image: "/images/site/vrf_roof.png",
+    image: "/images/site/vrf_roof.webp",
   },
   {
     title: "وحدات فان كويل شيلد ووتر (Fan Coil Units)",
     subtitle: "تنفيذ وحدات الفان كويل بمطعم بيتزا كينج - مول العباسي أمام مدينة الرحاب",
-    image: "/images/site/concealed_units.png",
+    image: "/images/site/concealed_units.webp",
   },
 ];
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const cairo = Cairo({
@@ -10,8 +11,9 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.aurexegypt.com"),
   title: "أوريكس للأعمال الكهروميكانيكية والإنشاءات | Aurex Electromechanical",
-  description: "شركة أوريكس المتخصصة في أنظمة التكييف المركزي (Chilled Water, VRF, Concealed)، تصنيع وتوريد الدكت، مواسير الفريون، موزع معتمد لكاريير، ميديا، هاير وتوشيبا، وأعمال مكافحة الحريق في مصر.",
+  description: "شركة أوريكس المتخصصة في أنظمة التكييف المركزي (Chilled Water, VRF, Concealed)، تصنيع وتوريد الدكت، مواسير الفريون، موزع معتمد لكاريير، ميديا، وهاير، وأعمال مكافحة الحريق في مصر.",
   keywords: [
     "أوريكس",
     "Aurex",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "أوريكس - Aurex",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/images/logo.webp",
         width: 800,
         height: 800,
         alt: "Aurex Electromechanical Logo",
@@ -43,8 +45,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/logo.webp",
+    apple: "/images/logo.webp",
   },
 };
 
@@ -55,7 +57,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl" className={cairo.variable}>
+      <head>
+        {/* Google Tag Manager Script */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HZD5562');`,
+          }}
+        />
+      </head>
       <body className="font-cairo antialiased bg-slate-50 text-slate-900 selection:bg-aurex-navy selection:text-white">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5HZD5562"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         {children}
       </body>
     </html>

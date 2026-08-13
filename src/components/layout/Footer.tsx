@@ -25,7 +25,7 @@ export default function Footer() {
             <Link href="#hero" className="flex items-center gap-3">
               <div className="relative w-12 h-12 rounded-full overflow-hidden bg-white p-1 shadow-md">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.webp"
                   alt={COMPANY_INFO.fullName}
                   fill
                   className="object-contain p-0.5"
