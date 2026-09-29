@@ -48,6 +48,9 @@ export const metadata: Metadata = {
     icon: "/images/logo.webp",
     apple: "/images/logo.webp",
   },
+  alternates: {
+    canonical: "https://www.aurexegypt.com/",
+  },
 };
 
 export default function RootLayout({
