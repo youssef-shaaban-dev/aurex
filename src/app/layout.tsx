@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     apple: "/images/logo.webp",
   },
   alternates: {
-    canonical: "https://www.aurexegypt.com/",
+    canonical: "https://aurexegypt.com",
   },
 };
 
