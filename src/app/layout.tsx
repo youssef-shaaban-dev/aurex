@@ -13,7 +13,7 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aurexegypt.com/"),
   title: "شركة تكييف مركزي ومقاولات كهروميكانيكية في مصر | أوريكس",
-  description: "أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية في مصر. حلول Chilled Water وVRV/VRF والدكت ومكافحة الحريق، وموزع معتمد لكاريير وميديا وهاير.",
+  description: "أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية في مصر. حلول VRF/VRV وChilled Water والدكت ومكافحة الحريق.",
   keywords: [
     "أوريكس",
     "Aurex",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   authors: [{ name: "أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية" }],
   openGraph: {
     title: "شركة تكييف مركزي ومقاولات كهروميكانيكية في مصر | أوريكس",
-    description: "أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية في مصر. حلول Chilled Water وVRV/VRF والدكت ومكافحة الحريق، وموزع معتمد لكاريير وميديا وهاير.",
+    description: "أوريكس للتكييف المركزي والمقاولات الكهروميكانيكية في مصر. حلول VRF/VRV وChilled Water والدكت ومكافحة الحريق.",
     url: "https://www.aurexegypt.com",
     siteName: "أوريكس - Aurex",
     images: [
