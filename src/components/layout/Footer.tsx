@@ -1,6 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MessageSquare, Mail, MapPin, ArrowUp } from "lucide-react";
+import { MessageSquare, Mail, MapPin, ArrowUp, Info } from "lucide-react";
 import { COMPANY_INFO } from "@/data/companyData";
 
 const NAV_LINKS = [
@@ -13,6 +16,8 @@ const NAV_LINKS = [
 ];
 
 export default function Footer() {
+  const [showPartnership, setShowPartnership] = useState(false);
+
   return (
     <footer className="bg-aurex-navy-dark text-white pt-16 pb-8 border-t border-aurex-navy/40 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -101,10 +106,46 @@ export default function Footer() {
             © {new Date().getFullYear()} أوريكس - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري.
           </p>
           <div className="flex items-center justify-center gap-2 text-slate-300 pt-1">
-            <span>صُنع بكل فخر في مصر بحب ❤️</span>
+            <span>صُنع بكل حب في مصر ❤️</span>
             <Link href="https://mrco-egypt.com" target="_blank" rel="noopener noreferrer" className="hover:text-aurex-green-light transition-colors underline decoration-aurex-green text-white">
-              تم تصميم وتطوير الموقع من خلال شركة ميركو ايجيبت
+              تم تطوير الموقع من خلال شركة ميركو ايجيبت
             </Link>
+          </div>
+
+          {/* MRCO-Egypt Partnership Tooltip */}
+          <div className="flex justify-center mt-4 pb-2 px-2">
+            <div
+              className="inline-flex flex-wrap items-center justify-center gap-1.5 group relative cursor-help text-center select-none"
+              onClick={() => setShowPartnership(!showPartnership)}
+            >
+              <p dir="ltr" className="text-[10px] sm:text-xs text-gray-400 group-hover:text-gray-300 transition-colors leading-relaxed max-w-[280px] sm:max-w-none border-b border-dashed border-gray-500/50 pb-0.5">
+                <span className="text-white font-bold">Aurex | </span>
+                <a href="https://mrco-egypt.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline hover:text-aurex-green-light transition-colors">Growth & Marketing by MRCO-Egypt</a>
+                <span className="text-gray-400 group-hover:text-gray-300 transition-colors"> a strategy-driven digital marketing and brand communication agency in Egypt</span>
+              </p>
+
+              <Info className={`w-3.5 h-3.5 transition-colors flex-shrink-0 inline-block ${showPartnership ? 'text-gray-300' : 'text-gray-400 group-hover:text-gray-300'}`} />
+
+              <div
+                className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[90vw] sm:w-[450px] p-4 sm:p-5 bg-[#071E3D] sm:bg-[#07254D] rounded-xl border border-amber-400/30 shadow-2xl transition-all duration-300 z-50 text-left pointer-events-none ${showPartnership
+                    ? 'opacity-100 visible translate-y-0'
+                    : 'opacity-0 invisible translate-y-2 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0'
+                  }`}
+                dir="ltr"
+              >
+                <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-2">
+                  <span className="text-aurex-green-light font-bold text-xs">Growth & Marketing</span>
+                </div>
+                <p className="text-[11px] sm:text-[11.5px] font-light text-gray-200 leading-relaxed mb-3">
+                  Aurex - Growth & Marketing by MRCO-Egypt , a strategy-driven digital marketing and brand communication agency in Egypt, for brand strategy, digital marketing, and web development.
+                </p>
+                <p className="text-[11px] sm:text-[11.5px] font-light text-gray-200 leading-relaxed">
+                  MRCO-Egypt specializes in brand strategy, brand identity, web development, SEO, Generative Engine Optimization (GEO), and AI Optimization (AIO), helping businesses build distinctive brands and achieve measurable digital growth.
+                </p>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-[7px] border-transparent border-t-amber-400/30"></div>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#071E3D] sm:border-t-[#07254D] -mt-[1px]"></div>
+              </div>
+            </div>
           </div>
 
           <div className="pt-4 flex justify-center">
