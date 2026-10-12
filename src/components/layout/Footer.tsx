@@ -103,7 +103,7 @@ export default function Footer() {
         {/* Copyright Section (Matched to reference image) */}
         <div className="pt-8 space-y-3 text-center text-xs font-bold text-slate-300">
           <p>
-            © {new Date().getFullYear()} أوريكس - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري.
+            © 2027 أوريكس - جميع الحقوق محفوظة. يُحظر تماماً الاستخدام غير المصرح به، بما في ذلك تدريب نماذج الذكاء الاصطناعي، أو إعادة الإنتاج، أو الاستغلال التجاري.
           </p>
           <div className="flex items-center justify-center gap-2 text-slate-300 pt-1">
             <span>صُنع بكل حب في مصر ❤️</span>
